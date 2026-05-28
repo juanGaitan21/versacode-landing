@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="VersaCode — Desarrollo de software a medida: apps, sistemas web, inventarios, facturación, chatbots y cualquier solución que tu negocio necesite." />
+  <title>VersaCode | Software a tu medida</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#" class="logo">
+        <span class="logo-icon">VC</span>
+        <span>Versa<strong>Code</strong></span>
+      </a>
+      <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="#desarrollo">A medida</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#sectores">Sectores</a></li>
+        <li><a href="#demos">Demos</a></li>
+        <li><a href="#contacto" class="btn btn-sm">Contactar</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero" id="inicio">
+      <div class="hero-bg">
+        <div class="grid-lines"></div>
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+      </div>
+      <div class="container hero-content">
+        <div class="hero-text">
+          <p class="badge animate-in">VersaCode · Software a tu medida</p>
+          <h1 class="animate-in delay-1">
+            Si lo puedes imaginar,
+            <span class="gradient-text">lo puedo desarrollar</span>
+          </h1>
+          <p class="hero-desc animate-in delay-2">
+            Desarrollo <strong>cualquier tipo de software</strong>: apps, sistemas web,
+            automatizaciones, inventarios, facturación, chatbots y más. Atención
+            personal de Juan Gaitán — para médicos, contadores, abogados y empresas.
+          </p>
+          <div class="hero-actions animate-in delay-3">
+            <a href="#demos" class="btn btn-primary">Ver demostraciones</a>
+            <a href="#servicios" class="btn btn-outline">Explorar servicios</a>
+          </div>
+          <div class="hero-stats animate-in delay-4">
+            <div><strong>1 a 1</strong><span>Atención directa</span></div>
+            <div><strong>100%</strong><span>A tu medida</span></div>
+            <div><strong>∞</strong><span>Ideas posibles</span></div>
+          </div>
+        </div>
+        <div class="hero-visual animate-in delay-2">
+          <div class="dashboard-mock">
+            <div class="mock-header">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+              <span class="mock-title">Panel de gestión</span>
+            </div>
+            <div class="mock-body">
+              <div class="mock-sidebar">
+                <div class="mock-nav-item active"></div>
+                <div class="mock-nav-item"></div>
+                <div class="mock-nav-item"></div>
+                <div class="mock-nav-item"></div>
+              </div>
+              <div class="mock-main">
+                <div class="mock-cards">
+                  <div class="mock-card pulse">
+                    <span class="mock-label">Inventario</span>
+                    <span class="mock-value">1,248</span>
+                    <div class="mock-bar"><div class="mock-bar-fill" style="width:78%"></div></div>
+                  </div>
+                  <div class="mock-card pulse delay-pulse">
+                    <span class="mock-label">Pedidos hoy</span>
+                    <span class="mock-value">47</span>
+                    <div class="mock-bar"><div class="mock-bar-fill accent" style="width:62%"></div></div>
+                  </div>
+                  <div class="mock-card pulse delay-pulse-2">
+                    <span class="mock-label">Facturas</span>
+                    <span class="mock-value">$12.4k</span>
+                    <div class="mock-bar"><div class="mock-bar-fill success" style="width:91%"></div></div>
+                  </div>
+                </div>
+                <div class="mock-chart">
+                  <div class="chart-bars">
+                    <div class="bar" style="--h:40%"></div>
+                    <div class="bar" style="--h:65%"></div>
+                    <div class="bar" style="--h:45%"></div>
+                    <div class="bar" style="--h:80%"></div>
+                    <div class="bar" style="--h:55%"></div>
+                    <div class="bar" style="--h:90%"></div>
+                    <div class="bar" style="--h:70%"></div>
+                  </div>
+                </div>
+                <div class="mock-map">
+                  <div class="map-pin pin-1"></div>
+                  <div class="map-pin pin-2"></div>
+                  <div class="map-pin pin-3"></div>
+                  <div class="map-route"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="floating-badge badge-1">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            Chatbot activo
+          </div>
+          <div class="floating-badge badge-2">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg>
+            Factura enviada
+          </div>
+        </div>
+      </div>
+      <a href="#servicios" class="scroll-hint" aria-label="Desplazarse hacia abajo">
+        <span></span>
+      </a>
+    </section>
+
+    <!-- Desarrollo a medida -->
+    <section class="section desarrollo" id="desarrollo">
+      <div class="container">
+        <div class="desarrollo-banner">
+          <div class="desarrollo-text">
+            <span class="section-tag">Desarrollo a medida</span>
+            <h2>¿Tienes una idea? La hacemos realidad</h2>
+            <p>
+              No vendo paquetes cerrados. Escucho tu necesidad y construyo el software
+              exacto que requieres: desde un panel sencillo hasta un sistema completo
+              con usuarios, roles, reportes e integraciones.
+            </p>
+            <ul class="desarrollo-list">
+              <li>No existe límite de industria ni de tipo de proyecto</li>
+              <li>Web, móvil, escritorio, APIs y automatizaciones</li>
+              <li>Desde cero o mejorando lo que ya tienes</li>
+            </ul>
+            <a href="#contacto" class="btn btn-primary">Cuéntame tu idea</a>
+          </div>
+          <div class="software-tags" aria-label="Tipos de software que desarrollo">
+            <span class="sw-tag">Apps móviles</span>
+            <span class="sw-tag">Sistemas web</span>
+            <span class="sw-tag">ERP / CRM</span>
+            <span class="sw-tag">E-commerce</span>
+            <span class="sw-tag">Portales</span>
+            <span class="sw-tag">APIs e integraciones</span>
+            <span class="sw-tag">Automatizaciones</span>
+            <span class="sw-tag">Dashboards</span>
+            <span class="sw-tag">Bases de datos</span>
+            <span class="sw-tag">Chatbots IA</span>
+            <span class="sw-tag">Facturación DIAN</span>
+            <span class="sw-tag">Y mucho más…</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Servicios -->
+    <section class="section servicios" id="servicios">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Qué puedo construir</span>
+          <h2>Servicios y soluciones</h2>
+          <p>Estos son los más solicitados — pero si necesitas algo distinto, solo pregunta.</p>
+        </div>
+        <div class="services-grid">
+          <article class="service-card service-card--featured" data-service="medida">
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg>
+            </div>
+            <h3>Software a medida</h3>
+            <p>Cualquier sistema que tu negocio necesite: lo diseño y programo desde cero, adaptado a tu proceso.</p>
+            <button class="service-link" data-action="contacto">Hablemos de tu idea →</button>
+          </article>
+          <article class="service-card" data-service="apps">
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"/></svg>
+            </div>
+            <h3>Apps móviles</h3>
+            <p>Aplicaciones para Android e iOS: ventas en campo, entregas, inventario en bodega y más.</p>
+            <button class="service-link" data-action="contacto">Consultar →</button>
+          </article>
+          <article class="service-card" data-service="automatizacion">
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/></svg>
+            </div>
+            <h3>Automatización</h3>
+            <p>Elimina tareas repetitivas: correos, reportes, sincronización entre Excel, WhatsApp y tus sistemas.</p>
+            <button class="service-link" data-action="contacto">Consultar →</button>
+          </article>
+          <article class="service-card" data-service="crm">
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/></svg>
+            </div>
+            <h3>CRM y gestión de clientes</h3>
+            <p>Seguimiento de leads, historial de contacto, cotizaciones y pipeline de ventas.</p>
+            <button class="service-link" data-action="contacto">Consultar →</button>
+          </article>
+          <article class="service-card" data-service="ecommerce">
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"/></svg>
+            </div>
+            <h3>Tiendas en línea</h3>
+            <p>E-commerce con catálogo, carrito, pagos en línea y panel de administración.</p>
+            <button class="service-link" data-action="contacto">Consultar →</button>
+          </article>
+          <article class="service-card" data-service="integraciones">
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 110-4h1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z"/></svg>
+            </div>
+            <h3>Integraciones y APIs</h3>
+            <p>Conecta tu software con DIAN, bancos, WhatsApp, Google, pasarelas de pago y otros sistemas.</p>
+            <button class="service-link" data-action="contacto">Consultar →</button>
+          </article>
+          <article class="service-card" data-service="inventario">
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"/></svg>
+            </div>
+            <h3>Control de inventario</h3>
+            <p>Stock en tiempo real, alertas de mínimos, entradas y salidas con trazabilidad completa.</p>
+            <button class="service-link" data-demo="inventario">Ver demo →</button>
+          </article>
+          <article class="service-card" data-service="pedidos">
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"/></svg>
+            </div>
+            <h3>Gestión de pedidos</h3>
+            <p>Desde la cotización hasta la entrega: estados, notificaciones y seguimiento automático.</p>
+            <button class="service-link" data-demo="pedidos">Ver demo →</button>
+          </article>
+          <article class="service-card" data-service="catalogo">
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 6h16M4 10h16M4 14h16M4 18h16"/></svg>
+            </div>
+            <h3>Catálogos digitales</h3>
+            <p>Productos y servicios con fotos, precios y variantes. Comparte por enlace o QR.</p>
+            <button class="service-link" data-demo="catalogo">Ver demo →</button>
+          </article>
+          <article class="service-card" data-service="chatbot">
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/></svg>
+            </div>
+            <h3>Chatbot inteligente</h3>
+            <p>Atiende consultas 24/7, agenda citas y responde preguntas frecuentes en WhatsApp y web.</p>
+            <button class="service-link" data-demo="chatbot">Ver demo →</button>
+          </article>
+          <article class="service-card" data-service="web">
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9"/></svg>
+            </div>
+            <h3>Páginas web</h3>
+            <p>Sitios modernos, rápidos y optimizados para captar clientes y mostrar tu marca.</p>
+            <button class="service-link" data-demo="web">Ver demo →</button>
+          </article>
+          <article class="service-card" data-service="facturacion">
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 14l6-6m-5.5 1.5h.01M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16l3.5-2 3.5 2 3.5-2 3.5 2z"/></svg>
+            </div>
+            <h3>Facturación electrónica</h3>
+            <p>Emite facturas válidas ante la DIAN, reportes fiscales y conciliación automática.</p>
+            <button class="service-link" data-demo="facturacion">Ver demo →</button>
+          </article>
+          <article class="service-card" data-service="geo">
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+            </div>
+            <h3>Georeferenciación</h3>
+            <p>Rutas de visitas, ubicación de clientes y seguimiento de equipos en campo.</p>
+            <button class="service-link" data-demo="geo">Ver demo →</button>
+          </article>
+          <article class="service-card" data-service="reportes">
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
+            </div>
+            <h3>Reportes y analítica</h3>
+            <p>Dashboards con KPIs, exportación a Excel/PDF y decisiones basadas en datos.</p>
+            <button class="service-link" data-demo="reportes">Ver demo →</button>
+          </article>
+          <article class="service-card" data-service="agenda">
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+            </div>
+            <h3>Agenda y reservas</h3>
+            <p>Citas en línea, recordatorios automáticos y calendario para consultorios y servicios.</p>
+            <button class="service-link" data-action="contacto">Consultar →</button>
+          </article>
+          <article class="service-card" data-service="documentos">
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+            </div>
+            <h3>Gestión documental</h3>
+            <p>Archivo digital, contratos, expedientes y firma electrónica organizados y seguros.</p>
+            <button class="service-link" data-action="contacto">Consultar →</button>
+          </article>
+          <article class="service-card" data-service="soporte">
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
+            </div>
+            <h3>Soporte y mantenimiento</h3>
+            <p>Actualizo, corrijo y mejoro software existente — el tuyo o el de terceros.</p>
+            <button class="service-link" data-action="contacto">Consultar →</button>
+          </article>
+        </div>
+        <p class="services-note">¿No ves lo que buscas? <a href="#contacto">Escríbeme</a> — casi seguro que se puede hacer.</p>
+      </div>
+    </section>
+
+    <!-- Sectores -->
+    <section class="section sectores" id="sectores">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">A quién ayudamos</span>
+          <h2>A quién ayudo</h2>
+          <p>Conozco las necesidades de cada sector y adapto la solución a tu día a día.</p>
+        </div>
+        <div class="sector-tabs" role="tablist">
+          <button class="sector-tab active" role="tab" aria-selected="true" data-sector="salud">Salud</button>
+          <button class="sector-tab" role="tab" aria-selected="false" data-sector="contadores">Contadores</button>
+          <button class="sector-tab" role="tab" aria-selected="false" data-sector="abogados">Abogados</button>
+          <button class="sector-tab" role="tab" aria-selected="false" data-sector="empresas">Empresas</button>
+        </div>
+        <div class="sector-panels">
+          <div class="sector-panel active" id="panel-salud" role="tabpanel">
+            <div class="sector-content">
+              <div class="sector-text">
+                <h3>Profesionales de la salud</h3>
+                <p>Clínicas, consultorios, farmacias y laboratorios necesitan orden y cumplimiento.</p>
+                <ul class="sector-features">
+                  <li>Historias clínicas y agenda de citas</li>
+                  <li>Inventario de insumos y medicamentos</li>
+                  <li>Facturación de servicios y copagos</li>
+                  <li>Chatbot para recordatorios de citas</li>
+                </ul>
+              </div>
+              <div class="sector-visual health-visual">
+                <div class="health-card">
+                  <div class="health-icon pulse-icon">+</div>
+                  <div class="health-lines">
+                    <div class="line"></div><div class="line short"></div><div class="line"></div>
+                  </div>
+                  <div class="health-appointment">
+                    <span class="appt-time">10:30</span>
+                    <span class="appt-patient">Paciente confirmado</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="sector-panel" id="panel-contadores" role="tabpanel" hidden>
+            <div class="sector-content">
+              <div class="sector-text">
+                <h3>Contadores y firmas contables</h3>
+                <p>Automatiza la gestión de clientes y cumple con obligaciones fiscales sin estrés.</p>
+                <ul class="sector-features">
+                  <li>Facturación electrónica masiva</li>
+                  <li>Reportes tributarios y conciliación</li>
+                  <li>Portal de clientes con documentos</li>
+                  <li>Control de vencimientos y alertas</li>
+                </ul>
+              </div>
+              <div class="sector-visual accounting-visual">
+                <div class="invoice-stack">
+                  <div class="invoice inv-1">FAC-001</div>
+                  <div class="invoice inv-2">FAC-002</div>
+                  <div class="invoice inv-3">FAC-003</div>
+                </div>
+                <div class="check-mark">✓ DIAN</div>
+              </div>
+            </div>
+          </div>
+          <div class="sector-panel" id="panel-abogados" role="tabpanel" hidden>
+            <div class="sector-content">
+              <div class="sector-text">
+                <h3>Abogados y bufetes</h3>
+                <p>Organiza expedientes, plazos y facturación por honorarios en un solo lugar.</p>
+                <ul class="sector-features">
+                  <li>Gestión de casos y expedientes</li>
+                  <li>Calendario de audiencias y plazos</li>
+                  <li>Facturación por horas y anticipos</li>
+                  <li>Portal seguro para clientes</li>
+                </ul>
+              </div>
+              <div class="sector-visual legal-visual">
+                <div class="gavel-animation">
+                  <div class="gavel"></div>
+                  <div class="block"></div>
+                </div>
+                <div class="case-files">
+                  <div class="file-tab"></div>
+                  <div class="file-tab"></div>
+                  <div class="file-tab active-tab"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="sector-panel" id="panel-empresas" role="tabpanel" hidden>
+            <div class="sector-content">
+              <div class="sector-text">
+                <h3>Empresas y comercio</h3>
+                <p>Desde el almacén hasta la venta: todo conectado para escalar tu operación.</p>
+                <ul class="sector-features">
+                  <li>ERP ligero: inventario + ventas + compras</li>
+                  <li>Catálogo B2B y tienda en línea</li>
+                  <li>Rutas de distribución con GPS</li>
+                  <li>Integración con pasarelas de pago</li>
+                </ul>
+              </div>
+              <div class="sector-visual business-visual">
+                <div class="warehouse">
+                  <div class="shelf"><div class="box"></div><div class="box"></div></div>
+                  <div class="shelf"><div class="box"></div><div class="box"></div><div class="box"></div></div>
+                  <div class="truck-icon">🚚</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Demos interactivas -->
+    <section class="section demos" id="demos">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">En acción</span>
+          <h2>Demostraciones animadas</h2>
+          <p>Algunos ejemplos de lo que desarrollo. Haz clic en cada pestaña para ver la animación.</p>
+        </div>
+        <div class="demo-wrapper">
+          <div class="demo-tabs">
+            <button class="demo-tab active" data-demo-tab="inventario">Inventario</button>
+            <button class="demo-tab" data-demo-tab="pedidos">Pedidos</button>
+            <button class="demo-tab" data-demo-tab="chatbot">Chatbot</button>
+            <button class="demo-tab" data-demo-tab="facturacion">Facturación</button>
+            <button class="demo-tab" data-demo-tab="geo">Geolocalización</button>
+          </div>
+          <div class="demo-screen">
+            <!-- Inventario -->
+            <div class="demo-panel active" data-demo-panel="inventario">
+              <div class="demo-animation inventario-demo">
+                <div class="inv-header">Control de inventario</div>
+                <div class="inv-table">
+                  <div class="inv-row header-row"><span>Producto</span><span>Stock</span><span>Estado</span></div>
+                  <div class="inv-row"><span>Producto A</span><span class="stock-num">450</span><span class="badge-ok">OK</span></div>
+                  <div class="inv-row"><span>Producto B</span><span class="stock-num warning">12</span><span class="badge-warn">Bajo</span></div>
+                  <div class="inv-row"><span>Producto C</span><span class="stock-num">890</span><span class="badge-ok">OK</span></div>
+                </div>
+                <div class="inv-alert anim-alert">
+                  <span>⚠</span> Alerta: Producto B bajo mínimo — reorden sugerido
+                </div>
+              </div>
+              <p class="demo-desc">Monitorea existencias, recibe alertas automáticas y genera órdenes de compra con un clic.</p>
+            </div>
+            <!-- Pedidos -->
+            <div class="demo-panel" data-demo-panel="pedidos" hidden>
+              <div class="demo-animation pedidos-demo">
+                <div class="order-flow">
+                  <div class="order-step done"><span>1</span>Recibido</div>
+                  <div class="order-line done"></div>
+                  <div class="order-step done"><span>2</span>Preparando</div>
+                  <div class="order-line active-line"></div>
+                  <div class="order-step active"><span>3</span>En camino</div>
+                  <div class="order-line"></div>
+                  <div class="order-step"><span>4</span>Entregado</div>
+                </div>
+                <div class="order-card anim-slide">
+                  <strong>Pedido #2847</strong>
+                  <span>Cliente: Empresa XYZ</span>
+                  <span class="order-status">Estado: En camino 🚚</span>
+                </div>
+              </div>
+              <p class="demo-desc">Seguimiento visual del ciclo completo del pedido con notificaciones al cliente.</p>
+            </div>
+            <!-- Chatbot -->
+            <div class="demo-panel" data-demo-panel="chatbot" hidden>
+              <div class="demo-animation chatbot-demo">
+                <div class="chat-window">
+                  <div class="chat-header">Asistente virtual</div>
+                  <div class="chat-messages">
+                    <div class="msg bot anim-msg-1">¡Hola! ¿En qué puedo ayudarte hoy?</div>
+                    <div class="msg user anim-msg-2">Quiero agendar una cita</div>
+                    <div class="msg bot anim-msg-3">Claro. ¿Prefieres mañana o el viernes?</div>
+                    <div class="msg user anim-msg-4">El viernes a las 3pm</div>
+                    <div class="msg bot anim-msg-5 typing">
+                      <span class="typing-dot"></span>
+                      <span class="typing-dot"></span>
+                      <span class="typing-dot"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <p class="demo-desc">Conversaciones naturales que agendan, cotizan y resuelven dudas sin intervención humana.</p>
+            </div>
+            <!-- Facturación -->
+            <div class="demo-panel" data-demo-panel="facturacion" hidden>
+              <div class="demo-animation facturacion-demo">
+                <div class="invoice-doc anim-print">
+                  <div class="inv-doc-header">FACTURA ELECTRÓNICA</div>
+                  <div class="inv-doc-line"></div>
+                  <div class="inv-doc-line short"></div>
+                  <div class="inv-doc-line"></div>
+                  <div class="inv-doc-total">Total: $1,250,000</div>
+                  <div class="inv-stamp anim-stamp">VALIDADA</div>
+                </div>
+                <div class="send-animation">
+                  <div class="send-icon">📧</div>
+                  <div class="send-trail"></div>
+                </div>
+              </div>
+              <p class="demo-desc">Genera, valida y envía facturas electrónicas cumpliendo normativa fiscal vigente.</p>
+            </div>
+            <!-- Geo -->
+            <div class="demo-panel" data-demo-panel="geo" hidden>
+              <div class="demo-animation geo-demo">
+                <div class="geo-map">
+                  <div class="geo-road"></div>
+                  <div class="geo-road geo-road-2"></div>
+                  <div class="geo-marker start">A</div>
+                  <div class="geo-marker end">B</div>
+                  <div class="geo-vehicle">🚗</div>
+                </div>
+                <div class="geo-info">
+                  <span>Ruta optimizada</span>
+                  <strong>12.4 km · 18 min</strong>
+                </div>
+              </div>
+              <p class="demo-desc">Visualiza rutas, ubicación en tiempo real y optimiza visitas de tu equipo en campo.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Proceso -->
+    <section class="section proceso">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Mi forma de trabajar</span>
+          <h2>De la idea al resultado</h2>
+        </div>
+        <div class="process-steps">
+          <div class="process-step">
+            <div class="step-num">01</div>
+            <h4>Escucho</h4>
+            <p>Conversamos sobre tu negocio, qué tienes hoy y qué quieres lograr.</p>
+          </div>
+          <div class="process-step">
+            <div class="step-num">02</div>
+            <h4>Propongo</h4>
+            <p>Te presento una solución clara, con precio justo y sin letra pequeña.</p>
+          </div>
+          <div class="process-step">
+            <div class="step-num">03</div>
+            <h4>Desarrollo</h4>
+            <p>Lo construyo, te muestro avances y capacito para que lo uses con confianza.</p>
+          </div>
+          <div class="process-step">
+            <div class="step-num">04</div>
+            <h4>Acompaño</h4>
+            <p>Sigo disponible para ajustes, soporte y mejoras cuando lo necesites.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contacto -->
+    <section class="section contacto" id="contacto">
+      <div class="container">
+        <div class="contact-grid">
+          <div class="contact-info">
+            <span class="section-tag">Hablemos</span>
+            <h2>¿Hablamos de tu proyecto?</h2>
+            <p>Escríbeme y cuéntame qué necesitas. Te respondo personalmente con una propuesta sin compromiso.</p>
+            <div class="contact-details">
+              <a href="mailto:contacto@versacode.com" class="contact-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                contacto@versacode.com
+              </a>
+              <a href="tel:+573001234567" class="contact-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+                +57 300 123 4567
+              </a>
+            </div>
+          </div>
+          <form class="contact-form" id="contactForm">
+            <div class="form-group">
+              <label for="nombre">Nombre</label>
+              <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre" />
+            </div>
+            <div class="form-group">
+              <label for="email">Correo</label>
+              <input type="email" id="email" name="email" required placeholder="tu@email.com" />
+            </div>
+            <div class="form-group">
+              <label for="sector">Sector</label>
+              <select id="sector" name="sector">
+                <option value="">Selecciona...</option>
+                <option value="salud">Salud</option>
+                <option value="contadores">Contabilidad</option>
+                <option value="abogados">Legal</option>
+                <option value="empresas">Empresa / Comercio</option>
+                <option value="otro">Otro</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="mensaje">Mensaje</label>
+              <textarea id="mensaje" name="mensaje" rows="4" required placeholder="Describe tu idea o el software que necesitas..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">Enviar mensaje</button>
+            <p class="form-note" id="formNote" hidden>¡Gracias! Te responderé pronto. (Demo local — conectar al desplegar en servidor)</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="#" class="logo">
+          <span class="logo-icon">VC</span>
+          <span>Versa<strong>Code</strong></span>
+        </a>
+        <p>Software a tu medida · Desarrollado por Juan Gaitán</p>
+      </div>
+      <div class="footer-links">
+        <a href="#desarrollo">A medida</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#sectores">Sectores</a>
+        <a href="#demos">Demos</a>
+        <a href="#contacto">Contacto</a>
+      </div>
+      <p class="footer-copy">© 2026 VersaCode · Juan Gaitán. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
