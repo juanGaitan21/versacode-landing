@@ -9,7 +9,6 @@ document.addEventListener('DOMContentLoaded', () => {
   initSectorTabs();
   initDemoTabs();
   initServiceLinks();
-  initContactForm();
   initScrollReveal();
 });
 
@@ -153,25 +152,10 @@ function initServiceLinks() {
   });
 }
 
-/* Contact form (demo local) */
-function initContactForm() {
-  const form = document.getElementById('contactForm');
-  const note = document.getElementById('formNote');
-
-  form?.addEventListener('submit', (e) => {
-    e.preventDefault();
-    note.hidden = false;
-    form.reset();
-    setTimeout(() => {
-      note.hidden = true;
-    }, 5000);
-  });
-}
-
 /* Scroll reveal */
 function initScrollReveal() {
   const elements = document.querySelectorAll(
-    '.section-header, .service-card, .process-step, .sector-panel, .demo-wrapper, .contact-grid > *, .desarrollo-banner'
+    '.section-header, .service-card, .process-step, .sector-panel, .demo-wrapper, .contact-simple, .desarrollo-banner'
   );
 
   elements.forEach((el) => el.classList.add('reveal'));

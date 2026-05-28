@@ -1502,6 +1502,35 @@ body {
   background: var(--bg-soft);
 }
 
+.contact-simple {
+  text-align: center;
+  max-width: 560px;
+  margin: 0 auto;
+}
+
+.contact-simple h2 {
+  font-size: clamp(1.75rem, 4vw, 2.25rem);
+  margin: 0.5rem 0 1rem;
+}
+
+.contact-simple > p {
+  color: var(--text-muted);
+  margin-bottom: 2rem;
+}
+
+.contact-phone {
+  display: flex;
+  justify-content: center;
+}
+
+.btn-wa-lg {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 32px;
+  font-size: 1.15rem;
+}
+
 .contact-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
