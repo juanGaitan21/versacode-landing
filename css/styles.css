@@ -1538,11 +1538,50 @@ body {
   justify-content: center;
 }
 
-.btn-wa-lg {
-  gap: 10px;
-  padding: 12px 24px;
-  font-size: 1rem;
+.contact-wa-card {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  padding: 18px 32px;
+  background: #25d366;
+  color: #fff;
+  border-radius: 12px;
+  text-decoration: none;
+  box-shadow: 0 4px 16px rgba(37, 211, 102, 0.25);
+  transition: var(--transition);
+  max-width: 100%;
+}
+
+.contact-wa-card:hover {
+  background: #20bd5a;
+  transform: translateY(-2px);
+  color: #fff;
+  box-shadow: 0 6px 20px rgba(37, 211, 102, 0.35);
+}
+
+.contact-wa-label {
+  font-size: 0.8rem;
   font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  opacity: 0.95;
+}
+
+.contact-wa-number {
+  font-size: 1.25rem;
+  font-weight: 700;
+  white-space: nowrap;
+  letter-spacing: 0.02em;
+}
+
+@media (max-width: 400px) {
+  .contact-wa-number {
+    font-size: 1.05rem;
+  }
+  .contact-wa-card {
+    padding: 16px 20px;
+  }
 }
 
 .contact-grid {
