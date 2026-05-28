@@ -178,9 +178,17 @@ body {
 .btn-full { width: 100%; }
 
 .wa-icon {
+  display: block;
   width: 18px;
   height: 18px;
+  max-width: 18px;
+  max-height: 18px;
   flex-shrink: 0;
+}
+
+/* Evitar SVG gigantes si falla la carga de estilos parcial */
+a.whatsapp-float {
+  box-sizing: border-box;
 }
 
 .btn-wa {
@@ -1594,20 +1602,29 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 48px;
-  height: 48px;
-  padding: 0;
+  width: 48px !important;
+  height: 48px !important;
+  max-width: 48px;
+  max-height: 48px;
+  padding: 0 !important;
+  overflow: hidden;
   background: #25d366;
   color: #fff;
   border-radius: 50%;
   text-decoration: none;
   box-shadow: 0 2px 12px rgba(15, 23, 42, 0.12);
   transition: var(--transition);
+  line-height: 0;
 }
 
+.whatsapp-float svg,
 .whatsapp-float .wa-icon {
-  width: 22px;
-  height: 22px;
+  display: block;
+  width: 22px !important;
+  height: 22px !important;
+  max-width: 22px;
+  max-height: 22px;
+  flex: none;
 }
 
 .whatsapp-float:hover {
