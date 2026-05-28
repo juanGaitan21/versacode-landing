@@ -177,26 +177,38 @@ body {
 .btn-sm { padding: 8px 18px; font-size: 0.875rem; }
 .btn-full { width: 100%; }
 
+.wa-icon {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+}
+
 .btn-wa {
-  background: #25d366;
-  color: #fff;
-  box-shadow: 0 2px 12px rgba(37, 211, 102, 0.35);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #fff;
+  color: #128c7e;
+  border: 1.5px solid #25d366;
+  box-shadow: none;
 }
 
 .btn-wa:hover {
-  background: #20bd5a;
+  background: #f0fdf4;
+  color: #0f766e;
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
+  box-shadow: 0 4px 12px rgba(37, 211, 102, 0.15);
 }
 
 .btn-wa-nav {
-  background: #25d366 !important;
-  color: #fff !important;
-  border: none !important;
+  background: transparent !important;
+  color: #128c7e !important;
+  border: 1.5px solid #25d366 !important;
 }
 
 .btn-wa-nav:hover {
-  background: #20bd5a !important;
+  background: #f0fdf4 !important;
+  color: #0f766e !important;
 }
 
 /* Hero */
@@ -1524,11 +1536,10 @@ body {
 }
 
 .btn-wa-lg {
-  display: inline-flex;
-  align-items: center;
-  gap: 12px;
-  padding: 16px 32px;
-  font-size: 1.15rem;
+  gap: 10px;
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: 600;
 }
 
 .contact-grid {
@@ -1574,49 +1585,36 @@ body {
   flex-shrink: 0;
 }
 
-/* Botón flotante WhatsApp */
+/* Botón flotante WhatsApp — discreto */
 .whatsapp-float {
   position: fixed;
-  bottom: 24px;
-  right: 24px;
+  bottom: 20px;
+  right: 20px;
   z-index: 999;
   display: flex;
   align-items: center;
-  gap: 10px;
-  padding: 14px 20px;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  padding: 0;
   background: #25d366;
   color: #fff;
-  border-radius: 100px;
+  border-radius: 50%;
   text-decoration: none;
-  font-weight: 700;
-  font-size: 0.95rem;
-  box-shadow: 0 4px 20px rgba(37, 211, 102, 0.45);
+  box-shadow: 0 2px 12px rgba(15, 23, 42, 0.12);
   transition: var(--transition);
-  animation: waPulse 2.5s ease-in-out infinite;
 }
 
-.whatsapp-float svg {
-  width: 28px;
-  height: 28px;
+.whatsapp-float .wa-icon {
+  width: 22px;
+  height: 22px;
 }
 
 .whatsapp-float:hover {
   background: #20bd5a;
-  transform: scale(1.05);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(15, 23, 42, 0.18);
   color: #fff;
-}
-
-@keyframes waPulse {
-  0%, 100% { box-shadow: 0 4px 20px rgba(37, 211, 102, 0.45); }
-  50% { box-shadow: 0 4px 28px rgba(37, 211, 102, 0.65); }
-}
-
-@media (max-width: 768px) {
-  .whatsapp-float span { display: none; }
-  .whatsapp-float {
-    padding: 14px;
-    border-radius: 50%;
-  }
 }
 
 .contact-item svg { width: 22px; height: 22px; flex-shrink: 0; }
