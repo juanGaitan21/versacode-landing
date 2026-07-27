@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initDemoTabs();
   initServiceLinks();
   initScrollReveal();
+  initWhatsAppFloat();
 });
 
 /* Header scroll effect */
@@ -155,7 +156,7 @@ function initServiceLinks() {
 /* Scroll reveal */
 function initScrollReveal() {
   const elements = document.querySelectorAll(
-    '.section-header, .service-card, .process-step, .sector-panel, .demo-wrapper, .contact-card, .desarrollo-banner'
+    '.section-header, .service-card, .process-step, .sector-panel, .demo-wrapper, .desarrollo-banner'
   );
 
   elements.forEach((el) => el.classList.add('reveal'));
@@ -172,4 +173,20 @@ function initScrollReveal() {
   );
 
   elements.forEach((el) => observer.observe(el));
+}
+
+/* Ocultar botón flotante cerca del cierre */
+function initWhatsAppFloat() {
+  const float = document.querySelector('.whatsapp-float');
+  const close = document.querySelector('.site-close');
+  if (!float || !close) return;
+
+  const observer = new IntersectionObserver(
+    ([entry]) => {
+      float.classList.toggle('is-hidden', entry.isIntersecting);
+    },
+    { threshold: 0.15 }
+  );
+
+  observer.observe(close);
 }
