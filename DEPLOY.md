@@ -2,11 +2,11 @@
 
 ## Repo en GitHub
 
-https://github.com/Trasoft-web/versacode-landing
+https://github.com/juanGaitan21/versacode-landing
 
 ## GitHub Pages (ya activo, alternativa gratis)
 
-https://trasoft-web.github.io/versacode-landing/
+https://juangaitan21.github.io/versacode-landing/ (activar Pages en el repo personal si lo deseas)
 
 ---
 
@@ -19,7 +19,7 @@ https://trasoft-web.github.io/versacode-landing/
 3. Clic en **Create GitHub App**.
 4. Pon un nombre único, ej: `Dokploy-Trasoft`.
 5. Clic **Create GitHub App** → te lleva a instalar en GitHub.
-6. En GitHub: **Install** → elige la organización **Trasoft-web**.
+6. En GitHub: **Install** → elige tu cuenta **juanGaitan21**.
 7. Repositorios: **Only select** → marca `versacode-landing`.
 8. **Install & Authorize**.
 
@@ -32,7 +32,7 @@ https://trasoft-web.github.io/versacode-landing/
 4. **Source**:
    - Type: **Git**
    - Provider: **GitHub**
-   - Organization: **Trasoft-web**
+   - Cuenta: **juanGaitan21** (Personal)
    - Repository: **versacode-landing**
    - Branch: **main**
 5. **Build**:

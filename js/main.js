@@ -155,7 +155,7 @@ function initServiceLinks() {
 /* Scroll reveal */
 function initScrollReveal() {
   const elements = document.querySelectorAll(
-    '.section-header, .service-card, .process-step, .sector-panel, .demo-wrapper, .contact-simple, .desarrollo-banner'
+    '.section-header, .service-card, .process-step, .sector-panel, .demo-wrapper, .contact-card, .desarrollo-banner'
   );
 
   elements.forEach((el) => el.classList.add('reveal'));
