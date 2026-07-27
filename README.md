@@ -7,14 +7,20 @@ Sitio web interactivo para ofrecer soluciones de tecnología: inventarios, pedid
 ### Opción 1: Abrir directamente
 Abre `index.html` en tu navegador (doble clic o arrastrar al navegador).
 
-### Opción 2: Servidor local (recomendado)
+### Opción 2: npm (recomendado)
 ```bash
 cd "/Users/juangaitan/Documents/trasoft/Pagina web juan"
-python3 -m http.server 8080
+npm install
+npm run dev
 ```
 Luego visita: **http://localhost:8080**
 
-### Opción 3: Live Server (VS Code / Cursor)
+### Opción 3: Servidor Python
+```bash
+python3 -m http.server 8080
+```
+
+### Opción 4: Live Server (VS Code / Cursor)
 Instala la extensión "Live Server" y haz clic en "Go Live".
 
 ## Estructura
