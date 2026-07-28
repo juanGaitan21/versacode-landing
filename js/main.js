@@ -157,10 +157,20 @@ function initServiceLinks() {
 /* Scroll reveal */
 function initScrollReveal() {
   const elements = document.querySelectorAll(
-    '.section-header, .service-card, .process-step, .sector-panel, .demo-wrapper, .closing-cta, .desarrollo-banner'
+    '.section-header, .service-card, .process-step, .sector-panel, .demo-wrapper, .desarrollo-banner'
   );
 
-  elements.forEach((el) => el.classList.add('reveal'));
+  if (!('IntersectionObserver' in window)) {
+    elements.forEach((el) => el.classList.add('reveal', 'visible'));
+    return;
+  }
+
+  const showVisible = (el) => {
+    const rect = el.getBoundingClientRect();
+    if (rect.top < window.innerHeight * 0.92 && rect.bottom > 0) {
+      el.classList.add('visible');
+    }
+  };
 
   const observer = new IntersectionObserver(
     (entries) => {
@@ -170,10 +180,17 @@ function initScrollReveal() {
         }
       });
     },
-    { threshold: 0.1, rootMargin: '0px 0px -40px 0px' }
+    { threshold: 0.05, rootMargin: '0px 0px 0px 0px' }
   );
 
-  elements.forEach((el) => observer.observe(el));
+  elements.forEach((el) => {
+    el.classList.add('reveal');
+    observer.observe(el);
+    showVisible(el);
+  });
+
+  window.addEventListener('load', () => elements.forEach(showVisible));
+  window.addEventListener('resize', () => elements.forEach(showVisible));
 }
 
 /* Hero parallax */
