@@ -21,7 +21,7 @@
   --shadow-lg: 0 12px 40px rgba(0, 0, 0, 0.5);
   --font: 'Plus Jakarta Sans', system-ui, sans-serif;
   --font-display: 'Space Grotesk', 'Plus Jakarta Sans', system-ui, sans-serif;
-  --header-h: 72px;
+  --header-h: 88px;
   --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -95,9 +95,9 @@ body {
 
 .logo-img {
   display: block;
-  height: 48px;
+  height: 80px;
   width: auto;
-  max-width: 132px;
+  max-width: 220px;
   object-fit: contain;
   object-position: left center;
   opacity: 0;
@@ -106,8 +106,8 @@ body {
 }
 
 .logo-img--sm {
-  height: 38px;
-  max-width: 110px;
+  height: 60px;
+  max-width: 180px;
   animation: none;
   opacity: 1;
 }
@@ -1681,33 +1681,24 @@ body {
 
 .closing-footer {
   padding-top: 0.5rem;
+  opacity: 1;
+  visibility: visible;
 }
 
 .closing-footer-row {
   display: flex;
+  justify-content: center;
   align-items: center;
-  justify-content: space-between;
-  gap: 1rem 1.5rem;
-  flex-wrap: wrap;
+  width: 100%;
 }
-
-.closing-footer .logo-img--sm {
-  height: 36px;
-  max-width: 100px;
-  width: auto;
-}
-
-.logo--footer {
-  color: #fff;
-  font-size: 1.1rem;
-}
-
-.logo--footer strong { color: #93c5fd; }
 
 .closing-nav {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.25rem 1.25rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.35rem 1.25rem;
+  min-width: 0;
 }
 
 .closing-nav a {
@@ -1720,15 +1711,19 @@ body {
 
 .closing-nav a:hover { color: #fff; }
 
-.closing-phone {
-  color: #6ee7b7;
-  font-size: 0.9rem;
-  font-weight: 600;
-  text-decoration: none;
-  transition: color var(--transition);
+.closing-footer .logo-img--sm {
+  height: 56px;
+  max-width: 170px;
+  width: auto;
+  display: block;
 }
 
-.closing-phone:hover { color: #a7f3d0; }
+.logo--footer {
+  color: #fff;
+  font-size: 1.1rem;
+}
+
+.logo--footer strong { color: #93c5fd; }
 
 .closing-copy {
   margin-top: 1.5rem;
@@ -1750,13 +1745,9 @@ body {
 
   .closing-wa-btn { width: 100%; justify-content: center; }
 
-  .closing-footer-row {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 1rem;
+  .closing-nav {
+    justify-content: center;
   }
-
-  .closing-nav { gap: 0.75rem 1rem; }
 
   .closing-copy { text-align: left; }
 }
@@ -2072,6 +2063,16 @@ body {
 .site-closing {
   background: #000;
   border-top: 1px solid var(--border);
+}
+
+.site-closing,
+.site-closing-inner,
+.closing-footer,
+.closing-footer-row,
+.closing-nav,
+.closing-copy {
+  opacity: 1;
+  visibility: visible;
 }
 
 .site-closing-bg {

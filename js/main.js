@@ -10,7 +10,6 @@ document.addEventListener('DOMContentLoaded', () => {
   initDemoTabs();
   initServiceLinks();
   initScrollReveal();
-  initWhatsAppFloat();
   initHeroParallax();
 });
 
@@ -209,17 +208,4 @@ function initHeroParallax() {
   hero.addEventListener('mouseleave', () => {
     visual.style.transform = '';
   });
-}
-
-/* Ocultar botón flotante en la sección de cierre */
-function initWhatsAppFloat() {
-  const float = document.querySelector('.whatsapp-float');
-  const closing = document.querySelector('.site-closing');
-  if (!float || !closing) return;
-
-  const observer = new IntersectionObserver(
-    ([entry]) => float.classList.toggle('is-hidden', entry.isIntersecting),
-    { threshold: 0.15 }
-  );
-  observer.observe(closing);
 }
