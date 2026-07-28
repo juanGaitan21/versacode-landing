@@ -21,7 +21,7 @@
   --shadow-lg: 0 12px 40px rgba(0, 0, 0, 0.5);
   --font: 'Plus Jakarta Sans', system-ui, sans-serif;
   --font-display: 'Space Grotesk', 'Plus Jakarta Sans', system-ui, sans-serif;
-  --header-h: 104px;
+  --header-h: 112px;
   --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -95,9 +95,9 @@ body {
 
 .logo-img {
   display: block;
-  height: 96px;
+  height: 104px;
   width: auto;
-  max-width: 280px;
+  max-width: 300px;
   object-fit: contain;
   object-position: left center;
   opacity: 0;
@@ -2102,8 +2102,8 @@ body {
   }
 
   .logo-img {
-    height: 76px;
-    max-width: 220px;
+    height: 82px;
+    max-width: 240px;
   }
 
   .nav-links {
