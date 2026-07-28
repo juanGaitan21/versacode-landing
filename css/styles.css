@@ -88,69 +88,46 @@ body {
 .logo {
   display: flex;
   align-items: center;
-  gap: 12px;
   text-decoration: none;
   color: var(--text);
-}
-
-.logo-mark {
-  width: 36px;
-  height: 36px;
-  color: #fff;
   flex-shrink: 0;
 }
 
-.logo-mark--sm {
-  width: 28px;
-  height: 28px;
-}
-
-.logo-bar {
+.logo-img {
+  display: block;
+  height: 48px;
+  width: auto;
+  max-width: 132px;
+  object-fit: contain;
+  object-position: left center;
   opacity: 0;
-  transform: translateY(12px) skewX(-2deg);
-  animation: logoBarIn 0.7s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  animation: logoReveal 0.85s cubic-bezier(0.22, 1, 0.36, 1) 0.05s forwards;
+  transition: filter var(--transition), transform var(--transition);
 }
 
-.logo-bar.bar-1 { animation-delay: 0.1s; }
-.logo-bar.bar-2 { animation-delay: 0.25s; }
-.logo-bar.bar-3 { animation-delay: 0.4s; }
-
-@keyframes logoBarIn {
-  to { opacity: 1; transform: translateY(0) skewX(0); }
+.logo-img--sm {
+  height: 38px;
+  max-width: 110px;
+  animation: none;
+  opacity: 1;
 }
 
-.logo-text {
-  display: flex;
-  flex-direction: column;
-  gap: 0;
-  line-height: 1.1;
+.logo:hover .logo-img {
+  filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.25));
+  transform: translateY(-1px);
 }
 
-.logo-name {
-  font-family: var(--font-display);
-  font-weight: 700;
-  font-size: 1.15rem;
-  letter-spacing: -0.02em;
-  color: #fff;
-}
-
-.logo-name strong {
-  font-weight: 700;
-  color: #fff;
-}
-
-.logo-tag {
-  font-family: var(--font-display);
-  font-size: 0.55rem;
-  font-weight: 600;
-  letter-spacing: 0.28em;
-  text-transform: uppercase;
-  color: #737373;
-  margin-top: 2px;
-}
-
-.logo:hover .logo-mark {
-  filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.3));
+@keyframes logoReveal {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+    filter: blur(3px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+  }
 }
 
 .nav-links {
@@ -2096,8 +2073,9 @@ body {
 
 .closing-cta-text h2 { font-family: var(--font-display); }
 
-.logo--footer .logo-name,
-.logo--footer .logo-name strong { color: #fff; }
+.logo--footer .logo-img {
+  opacity: 1;
+}
 
 .hero-visual {
   transition: transform 0.15s ease-out;
