@@ -21,7 +21,7 @@
   --shadow-lg: 0 12px 40px rgba(0, 0, 0, 0.5);
   --font: 'Plus Jakarta Sans', system-ui, sans-serif;
   --font-display: 'Space Grotesk', 'Plus Jakarta Sans', system-ui, sans-serif;
-  --header-h: 112px;
+  --header-h: 128px;
   --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -71,6 +71,7 @@ body {
   backdrop-filter: blur(16px);
   border-bottom: 1px solid var(--border);
   transition: var(--transition);
+  overflow: visible;
 }
 
 .header.scrolled {
@@ -95,9 +96,9 @@ body {
 
 .logo-img {
   display: block;
-  height: 104px;
+  height: 120px;
   width: auto;
-  max-width: 300px;
+  max-width: 340px;
   object-fit: contain;
   object-position: left center;
   opacity: 0;
@@ -2098,12 +2099,12 @@ body {
 
 @media (max-width: 768px) {
   :root {
-    --header-h: 88px;
+    --header-h: 96px;
   }
 
   .logo-img {
-    height: 82px;
-    max-width: 240px;
+    height: 88px;
+    max-width: 260px;
   }
 
   .nav-links {
